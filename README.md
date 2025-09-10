@@ -31,7 +31,7 @@ The following metrics were used:
 | Linear Regression       | 0.0037 | 0.8188   |
 | Random Forest Regressor | 0.0043 | 0.7908   |
 
-### Sample Prediction (GRE=350, TOEFL=110, UnivRating=5, SOP=4.0, LOR=3.0, CGPA=8.87, Research=0)
+### Sample Prediction (GRE=350, TOEFL=110, University Rating=5, SOP=4.0, LOR=3.0, CGPA=8.87, Research=0)
 - **Linear Regression**: 0.830  
 - **Random Forest Regressor**: 0.701  
 

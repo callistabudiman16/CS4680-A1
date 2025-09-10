@@ -59,10 +59,19 @@ rf = RandomForestRegressor(
     random_state=42,
     n_jobs=-1
 )
+
+# Train the Random Forest model on the training data
 rf.fit(X_train, y_train)
+
+# Make predictions on the test set
 rf_pred = rf.predict(X_test)
+
+# Find the Mean Squared Error:average squared difference between actual and predicted values
+#  Find the R^2 score: how well the model explains variance (closer to 1 is better)
 rf_mse = mean_squared_error(y_test, rf_pred)
 rf_r2 = r2_score(y_test, rf_pred)
+
+# Make predictsion on the sample input
 predict_sample_rf = rf.predict(sample_df)[0]
 
 print()
